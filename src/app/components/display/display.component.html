@@ -1,0 +1,9 @@
+<div (mouseenter)="enter()" (mouseleave)="exit()" (click)="process()">
+    <img [src] ="image" class="thumbnail"
+        > 
+    <!-- ^ this property [] bound to display.ts -->
+    <p [style.font-size]="fontsize">{{ caption }}</p>
+    <button type="button" [disabled]="addToCart">
+        Add to Cart!
+    </button>
+</div>

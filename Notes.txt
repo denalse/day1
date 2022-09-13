@@ -1,0 +1,23 @@
+A Component (App) consist of 3 Components
+1. TypeScript(Behaviour)
+2. HTML (Structure)
+3. CSS (Style)
+
+* Commands *
+ng new <app name>
+ng serve
+ng build (after ng g c)
+ng g c components/display --skip-tests
+-> Under app > components > display > ...
+-> This command creates components.html/ts/css 'file' & updates module.ts
+
+A component have to be part of the module, -> ng g c means generate component
+It is now part of the "app module"
+
+Event Binding -> Specifies the trail of events (when something haooen, inform/updates user)
+
+    this.image = `/assets/pikachu${this.count}.jpg` <- use ` (Left hand top Corner)
+
+(app-root) pass data to (app-display) by @Input attribute binding []
+In app-display, this is @Output
+-> To listen to an Event, (app-display) to (app-root) by ()event binding [DEFINE EVENT]
